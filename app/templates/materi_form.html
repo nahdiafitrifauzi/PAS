@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Tambah Materi{% endblock %}
+{% block content %}
+<h2>Tambah Materi Baru</h2>
+<form method="POST">
+    <label>Judul:</label><br>
+    <input type="text" name="judul" required><br><br>
+
+    <label>Isi Materi:</label><br>
+    <textarea name="isi" rows="6" cols="40" required></textarea><br><br>
+
+    <button type="submit">Simpan</button>
+</form>
+{% endblock %}
